@@ -13,6 +13,12 @@ The practical measurements and simulation outputs are identified separately in t
 
 ![Simulation diagram](simulation-diagram.jpg)
 
+### Experimental waveform capture
+
+![Experimental oscilloscope waveforms](experimental-waveforms.png)
+
+Recorded waveforms from the practical implementation (see the French report for the operating conditions).
+
 ## Repository contents
 
 | File | Purpose |
