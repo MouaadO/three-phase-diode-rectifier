@@ -1,6 +1,6 @@
 # Three-Phase Diode Rectifier
 
-Practical implementation and experimental validation of three-phase diode rectification, smoothing and commutation overlap, with a Simulink model and MATLAB analysis.
+Practical implementation of three-phase diode rectifiers. I studied smoothing and commutation overlap through laboratory measurements, MATLAB calculations and Simulink simulations.
 
 ## Practical implementation and experimental validation
 
@@ -9,7 +9,7 @@ Practical implementation and experimental validation of three-phase diode rectif
 - Analysed voltage/current waveforms and the influence of smoothing and leakage inductance.
 - Compared practical measurements with theoretical calculations and simulation waveforms.
 
-The practical measurements and simulation outputs are identified separately in the French report. The image below is a simulation diagram, not a photograph of the physical setup.
+### Simulation circuit
 
 ![Simulation diagram](simulation-diagram.jpg)
 
@@ -17,15 +17,15 @@ The practical measurements and simulation outputs are identified separately in t
 
 ![Experimental oscilloscope waveforms](experimental-waveforms.png)
 
-Recorded waveforms from the practical implementation (see the French report for the operating conditions).
+Oscilloscope measurements from the practical work. Circuit settings and measurement conditions are given in the report.
 
 ## Repository contents
 
 | File | Purpose |
 | --- | --- |
 | [diode-rectifier-report-fr.pdf](diode-rectifier-report-fr.pdf) | Full French report: experimental setup, measurements, calculations and simulation comparisons. |
-| [results-and-waveforms.zip](results-and-waveforms.zip) | Complete archive of the supplied diagrams, waveforms and spectra. |
-| [simulation-diagram.jpg](simulation-diagram.jpg) | Simulation diagram preview shown below. |
+| [results-and-waveforms.zip](results-and-waveforms.zip) | Circuit diagrams, waveforms and spectra. |
+| [simulation-diagram.jpg](simulation-diagram.jpg) | Simulation circuit diagram. |
 | [diode_rectifier.slx](diode_rectifier.slx) | Editable Simulink model. |
 | [rectifier-analysis.m](rectifier-analysis.m) | MATLAB analysis script. |
 
@@ -38,14 +38,13 @@ Recorded waveforms from the practical implementation (see the French report for 
 
 ## Software requirements
 
-MATLAB is required for `.m` scripts. Simulink and the power-system blocks used by the model are required for `.slx` files. Some analytical scripts use `syms`/`vpasolve` and therefore require Symbolic Math Toolbox. The exact original MATLAB release is not specified; model compatibility should be checked in your installation.
+MATLAB and Simulink. The circuit models use power-system blocks. Scripts using `syms` or `vpasolve` also require Symbolic Math Toolbox.
 
 ## Project context
 
-Academic power-electronics project completed at the National Polytechnic School of Algiers in 2024/2025, including practical laboratory work and simulation. This repository presents Amani Mouaad’s portfolio version of a collaborative academic project.
+Power-electronics group project completed at the National Polytechnic School of Algiers in 2024/2025, combining practical laboratory work and simulation.
 
-**Portfolio author:** Amani Mouaad  
+**Author:** Amani Mouaad  
 **Supervision:** Pr. M. Mahmoudi and Mr. Benachour.
 
-The technical report is retained in French. Repository documentation is in English. The original source documents are preserved separately.
-
+The report is in French.
